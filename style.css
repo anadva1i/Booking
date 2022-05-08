@@ -1,0 +1,172 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 0;
+  background-color: black;
+  font-family: Optima, sans-serif;
+}
+
+.header{
+  text-align: center;
+  height: 74vh;
+  padding-top: 30vh
+}
+
+@media (max-width: 500px) {
+  .header{
+    padding-top: 5vh;
+  }
+  .flex-container {
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  .flex-item{
+    margin: 20px 5px;
+  }
+}
+
+@media (max-width: 1080px) {
+  body {
+    background-size: contain;
+  }
+}
+
+.header .paragraph{
+  padding: 0 50vh;
+  font-style: italic;
+  text-align: left;
+}
+
+.book{
+  position: absolute;
+  bottom: 0;
+  background-color: #202020;
+  opacity: 0.9;
+  width: 100%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.sessions{
+  flex-direction: row;
+}
+
+ul{
+  list-style: none;
+  font-size: 24px;
+  padding: 10vh 0;
+}
+
+.flex-item{
+  flex-grow: 1;
+  text-align: center;
+  /* margin: 20px; */
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  padding: 3vh;
+  border-radius: 20px;
+}
+
+li > a:hover{
+  background: #181818;
+}
+
+.checked{
+  background: #181818;
+}
+
+.hide{
+  display: none;
+}
+
+.paragraph-date{
+  margin-left: 50px;
+}
+
+.sessions{
+  background: #181818;
+  border-radius: 30px;
+  padding: 5vh 0;
+  margin: 0 2vh;
+}
+.green{
+  background-color: #167020;
+}
+.active{
+  background-color: #115418;
+}
+
+.green:hover{
+  background-color: #115418;
+}
+
+.red{
+  background-color: #C52727;
+  cursor: not-allowed;
+}
+
+.btn:hover{
+  background-color: #151515;
+}
+
+.btn{
+  color: #167020;
+  font-weight: bolder;
+  font-size: 18px;
+  background: #181818;
+  border-radius: 15px;
+  padding: 2vh;
+  margin: 10px 2vh 2vh 2vh;
+  border: none;
+  cursor: pointer;
+}
+
+.disabled{
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  background: #115418;
+  padding: 20px;
+  width: 100%;
+  z-index: 1;
+}
+
+.modal p{
+    display: inline;
+    line-height: 40px;
+}
+.modal a:hover{
+  opacity: 0.8;
+}
+
+.modal a{
+  padding: 10px 20px;
+  margin: 0;
+  font-weight: bold;
+  background: #181818;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.close{
+  float: right;
+  cursor: pointer;
+}
